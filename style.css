@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+}
+
+.sidebar {
+  width: 60px;
+  background: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+}
+
+.sidebar-item {
+  color: #bbb;
+  text-decoration: none;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.sidebar-item.active, .sidebar-item:hover {
+  background: #555;
+  color: #fff;
+}
+
+.container {
+  margin-left: 60px;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.container h1 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.container h1::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: #838DE4;
+}
+
+.container .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+
+.container .row .service {
+  background: #e8f1f2;
+  padding: 25px 10px;
+  text-align: center;
+  border-radius: 10px;
+  transition: transform .5s;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.container .row .service:hover {
+  transform: scale(1.1);
+  background: #B5AEF3;
+  color: white;
+}
+.container .row .service i{
+  color: #766BBE;
+  width: 40px;
+  height: auto;
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+
+.container .row .service img {
+  width: 40px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.companies {
+  text-align: center;
+}
+
+.carousel {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-item {
+  display: none;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.carousel-item img {
+  width: 60%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.carousel-item.active {
+  display: block;
+}
+
+.carousel-control {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #B5AEF3;
+  background-color: #838de43f;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.carousel-control.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.carousel-control.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.carousel-control:hover {
+  background-color: #B5AEF3;
+  color: #766BBE;
+}
+.profile-image {
+  flex: 1;
+  text-align: center;
+  padding-bottom: 30px;
+
+}
+
+.profile-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.about-text {
+  flex: 2;
+  padding: 0 20px;
+  padding-top: 30px;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.about-text h1 {
+  text-align: center;
+}
+
+.about-text p {
+  text-align: justify;
+  margin-top: 20px;
+}
+
+/* Para manter a largura da seção sobre a escolaridade */
+.about-text .row {
+  flex-wrap: wrap;
+}
+
+.about-text .service {
+  width: 50%; /* Ou qualquer valor desejado para o layout */
+  padding: 10px;
+}
+
+.about-text .social-links {
+  display: flex;
+  justify-content: start;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .about-text .service {
+    width: 100%;
+  }
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+}
+
+.social-links img {
+  width: 40px;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .social-links {
+    flex-direction: rrow;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-links a {
+    margin: 10px 0;
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+}
