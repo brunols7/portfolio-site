@@ -1,9 +1,8 @@
 ### Portfolio Bruno Leonardo
 
-<div style="text-align: center;">
-    <img src="/assets/profile-image.png" alt="Profile Image">
-</div>
-<h4 align="center"><a href="https://brunols7.github.io/portfolio-site/">Click here to view the portfolio</a></h4>
+
+<img src="/assets/profile-image.png" alt="Profile Image">
+<h4><a href="https://brunols7.github.io/portfolio-site/">Click here to view the portfolio</a></h4>
 
 ## 📚 Sections
 
