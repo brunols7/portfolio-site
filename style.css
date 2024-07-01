@@ -38,6 +38,7 @@ body {
 .sidebar-item.active, .sidebar-item:hover {
   background: #607CD9;
   color: #ffffff;
+  border-radius: 0 8px 8px 0;
 }
 
 .sidebar-item i {
